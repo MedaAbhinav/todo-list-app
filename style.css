@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #3a0ca3, #4361ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.todo-app {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.todo-app h2 {
+  margin-bottom: 15px;
+}
+
+/* Input Row */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #eee;
+  outline: none;
+}
+
+.row button {
+  background: #ff5c35;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* List */
+ul li {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Completed Task */
+ul li.checked {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete Button */
+ul li span {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
